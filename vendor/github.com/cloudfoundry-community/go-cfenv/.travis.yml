@@ -14,5 +14,5 @@ before_install:
 
 script:
   - gometalinter --disable-all --enable=vet --enable=vetshadow --enable=golint --enable=ineffassign --exclude=comment --tests .
-  - go test -race .
+  - go test
   - go test -cover .

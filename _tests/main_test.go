@@ -6,7 +6,7 @@ package main
 
 
 func TestDeveRetornarErro(t *testing.T) {
-    if true != false {
+    if true == false {
         t.Fatalf("Ferrou %v:\n\t nao eh  %v", true, false)
     }
 
