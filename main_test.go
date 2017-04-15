@@ -5,8 +5,8 @@ package main
   )
 
 
-func TestNaoDeveRetornarErro(t *testing.T) {
-    if true == false {
+func TestDeveRetornarErro(t *testing.T) {
+    if true != false {
         t.Fatalf("Ferrou %v:\n\t nao eh  %v", true, false)
     }
 
